@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int item1,item2,item3,Sub,deduct;
+    double discount,finalamount,salestax;
+    cout <<"Grocery Bill Calculator"<<endl;
+    cout <<"Item no.1: ";
+    cin>> item1;
+    cout <<"Item no.2: ";
+    cin>> item2;
+    cout <<"Item no.3: ";
+    cin>> item3;
+    
+    Sub = item1+item2+item3;
+    if (Sub > 100){
+        discount = Sub * 0.1;
+        if (discount>0){
+            deduct=Sub-discount;
+        }
+                if (discount>0){
+                    salestax=deduct*0.07;
+                }
+                
+    }
+    else{
+                    salestax=Sub*0.07;
+                }
+    finalamount=(Sub-discount)+salestax;
+    
+    cout <<"Expected Outcome"<<endl;
+    cout <<"    Subtotal: "<<fixed<<setprecision (2)<<Sub<<endl;
+    cout <<"    Discount: "<<discount<<endl;
+    cout <<"    Sales Tax :"<<salestax<<endl;
+    cout <<"    Total: "<<finalamount;
+    
+    return 0;
+}
