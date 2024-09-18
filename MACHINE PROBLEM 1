@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    string Fullname;
+    int age,stnum;
+    double gpa,finalgpa;
+    cout <<"Student's Info"<<endl;
+    cout <<"    Stdent's Fullname: ";
+    getline (cin,Fullname);
+    cout <<"    Student's age: ";
+    cin >> age;
+    cout <<"    Student's Number: ";
+    cin >> stnum;
+    cout <<"    GPA : ";
+    cin >> gpa;
+    
+    finalgpa = gpa + 0.5;
+    cout <<"Expected Outcome "<<endl;
+    cout <<"    Final GPA: " <<fixed <<setprecision (1)<<finalgpa;
+
+    return 0;
+}
