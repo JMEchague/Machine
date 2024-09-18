@@ -19,7 +19,7 @@ int main()
     month = years * 12;
     monthly = ((principal * r))/(1- pow( (1+r),-month));
     
-    cout <<"Expected Outcom"<<endl;
+    cout <<"Expected Outcome"<<endl;
     cout <<"    Monthly payment: "<<fixed<<setprecision (2)<<monthly;
     
     return 0;
