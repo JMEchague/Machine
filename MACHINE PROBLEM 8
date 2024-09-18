@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    double rate, principal,monthly,r;
+    int month,years,m;
+    cout <<"Monthly Loan Payment Calculator"<<endl;
+    cout <<"Loan amount: ";
+    cin>> principal;
+    cout <<"Annual interest rate: ";
+    cin>> rate;
+    cout <<"Number of years: ";
+    cin>> years;
+    
+    r= rate/12;
+    month = years * 12;
+    monthly = ((principal * r))/(1- pow( (1+r),-month));
+    
+    cout <<"Expected Outcom"<<endl;
+    cout <<"    Monthly payment: "<<fixed<<setprecision (2)<<monthly;
+    
+    return 0;
+}
