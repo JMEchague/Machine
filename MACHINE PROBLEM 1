@@ -20,7 +20,7 @@ int main()
     finalgpa = gpa + 0.5;
     cout <<"Student's Details"<<endl;
     cout <<"\tStudent's Name:   "<<Fullname<<endl;
-    cout <<"\tStedent's Age:    "<<age<<"years old"<<endl;
+    cout <<"\tStedent's Age:    "<<age<<" years old"<<endl;
     cout <<"\tStudent's Number: "<<stnum<<endl;
     cout <<"\tFinal GPA: \t  " <<fixed <<setprecision (1)<<finalgpa;
 
