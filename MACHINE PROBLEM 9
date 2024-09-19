@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 using namespace std;
 
 int main()
@@ -31,7 +30,6 @@ int main()
                 }
     
     finalamount=(Sub-discount)+salestax;
-    salestax=round(salestax);
     cout <<"List of items"<<endl;
     cout <<"    Item 1:   \t"<<item1<<endl;
     cout <<"    Item 2:   \t"<<item2<<endl;
