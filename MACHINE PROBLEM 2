@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main () 
+{ 
+	string EmployeeName;
+    string Position;
+    double BaseSalary;
+    double Bonus;
+    double TotalSalary;
+
+    cout << "Enter Employee's Full Name: ";
+    getline(cin, EmployeeName);
+    cout << "Enter Employee's Position: ";
+    getline(cin, Position);
+    cout << "Enter Employee's Base Salary: ";
+    cin >> BaseSalary;
+    cout << "Enter employee's Bonus: ";
+    cin >> Bonus;  
+    TotalSalary = BaseSalary + Bonus;
+    cout << "\nEmployee Details:" << endl;
+    cout << "Name: " << EmployeeName << endl;
+    cout << "Position: " << Position << endl;
+    cout << "Base Salary: " << BaseSalary << endl;
+    cout << "Bonus: " << Bonus << endl;
+    cout << "Total Salary: " << TotalSalary << endl;
+    return 0;
+}	
