@@ -24,7 +24,7 @@ int main()
     cout <<"\tLoan amount:          "<<principal<<endl;
     cout <<"\tAnnual interest rate: "<<rate<<"%"<<endl;
     cout <<"\tDuration of the loan: "<<years<<" years"<<endl;
-    cout <<"\tMonthly payment: "<<fixed<<setprecision (2)<<monthly;
+    cout <<"\tMonthly payment:      "<<fixed<<setprecision (2)<<monthly;
     
     return 0;
 }
