@@ -1,11 +1,12 @@
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-    int item1,item2,item3,Sub,deduct;
-    double discount,finalamount,salestax;
+    int item1,item2,item3,Sub;
+    double discount,finalamount,salestax,deduct;
     cout <<"Grocery Bill Calculator"<<endl;
     cout <<"Item no.1: ";
     cin>> item1;
@@ -21,15 +22,16 @@ int main()
             deduct=Sub-discount;
         }
                 if (discount>0){
-                    salestax=deduct*0.07;
+                    salestax= deduct*0.07;
                 }
                 
     }
     else{
                     salestax=Sub*0.07;
                 }
-    finalamount=(Sub-discount)+salestax;
     
+    finalamount=(Sub-discount)+salestax;
+    salestax=round(salestax);
     cout <<"List of items"<<endl;
     cout <<"    Item 1:   \t"<<item1<<endl;
     cout <<"    Item 2:   \t"<<item2<<endl;
