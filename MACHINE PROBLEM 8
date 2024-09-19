@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    double rate, principal,monthly,r;
+    double rate,rate2, principal,monthly,r;
     int month,years,m;
     cout <<"Monthly Loan Payment Calculator"<<endl;
     cout <<"Loan amount: ";
@@ -15,12 +15,16 @@ int main()
     cout <<"Number of years: ";
     cin>> years;
     
-    r= rate/12;
+    rate2=rate/100;
+    r= rate2/12;
     month = years * 12;
     monthly = ((principal * r))/(1- pow( (1+r),-month));
     
-    cout <<"Expected Outcome"<<endl;
-    cout <<"    Monthly payment: "<<fixed<<setprecision (2)<<monthly;
+    cout <<"\nMonthly Loan Payment Details"<<endl;
+    cout <<"\tLoan amount:          "<<principal<<endl;
+    cout <<"\tAnnual interest rate: "<<rate<<"%"<<endl;
+    cout <<"\tDuration of the loan: "<<years<<"year/s"<<endl;
+    cout <<"\tMonthly payment: "<<fixed<<setprecision (2)<<monthly;
     
     return 0;
 }
