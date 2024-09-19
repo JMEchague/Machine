@@ -16,7 +16,6 @@ int main()
 
 	simp_inte = (time* rate * princ) / 100;
 
-
 	cout << "\nSimple Interest: " << simp_inte;
 
 	return 0;
