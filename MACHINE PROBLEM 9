@@ -1,6 +1,5 @@
 #include <iostream>
 #include <iomanip>
-#include <cmath>
 using namespace std;
 
 int main()
@@ -31,11 +30,14 @@ int main()
                 }
     finalamount=(Sub-discount)+salestax;
     
-    cout <<"Expected Outcome"<<endl;
-    cout <<"    Subtotal: "<<fixed<<setprecision (2)<<Sub<<endl;
-    cout <<"    Discount: "<<discount<<endl;
-    cout <<"    Sales Tax :"<<salestax<<endl;
-    cout <<"    Total: "<<finalamount;
+    cout <<"List of items"<<endl;
+    cout <<"    Item 1:   \t"<<item1<<endl;
+    cout <<"    Item 2:   \t"<<item2<<endl;
+    cout <<"    Item 3:   \t"<<item3<<endl;
+    cout <<"    Subtotal: \t"<<fixed<<setprecision (2)<<Sub<<endl;
+    cout <<"    Discount: \t"<<discount<<endl;
+    cout <<"    Sales Tax:\t"<<salestax<<endl;
+    cout <<"    Total: \t"<<finalamount;
     
     return 0;
 }
