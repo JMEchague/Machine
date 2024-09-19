@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+#include <string>
+int main()
+{
+    double lngth, wdth, area, permtr;
+
+    cout << "length: ";
+    cin >> lngth;
+    cout << "width: ";
+    cin >> wdth;
+
+    area = lngth * wdth;
+    permtr = (lngth + wdth) * 2;
+
+    cout << "\nAREA: " << area << "\n";
+    cout << "PERIMETER: " << permtr << endl;
+    return 0;
+}
